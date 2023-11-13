@@ -1,0 +1,135 @@
+:root {
+    --main-color: #7EC8E3;
+    --white: #ffff;
+    --blue: #4475ef;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    /* background: linear-gradient(135deg, var(--main-color), var(--blue)); */
+    background-image: url('pexels-james-wheeler-417074.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    position: relative;
+}
+
+
+.container .weather-box {
+    width: 400px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 30px 60px rgba(3, 46, 87, 0.2);
+    text-align: center;
+}
+
+.weather-box .search-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.weather-box input[type="search"],
+.weather-box input[type="submit"] {
+    outline: none;
+    border: none;
+}
+
+.weather-box input[type="search"] {
+    background-color: transparent;
+    border-bottom: 2px solid var(--white);
+    padding: 7px;
+    width: 250px;
+    color: var(--white);
+    text-transform: capitalize;
+    font-weight: 500;
+}
+
+.weather-box input[type="submit"] {
+    background-color: var(--white);
+    color: black;
+    border: none;
+    padding: 10px;
+    margin-left: 10px;
+    border-radius: 5px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.weather-box #result .empty {
+    color: var(--white);
+    font-size: 17px;
+    margin: 20px 0;
+    letter-spacing: 1px;
+}
+
+.weather-box #result h2 {
+    color: var(--white);
+    margin: 20px 0;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.weather-box #result .weather_main,
+.weather-box #result .weather_description {
+    font-size: 15px;
+    color: #e5e5e5;
+    margin: 0 0 5px 0;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.weather-box #result img {
+    width: 80px;
+    display: block;
+    margin: auto;
+    filter: drop-shadow(0 20px 17px rgba(3, 46, 87, 0.2))
+}
+
+.weather-box #result .current_temp {
+    font-size: 40px;
+    font-weight: 500;
+    color: var(--white);
+}
+
+.weather-box #result .temp_min_max {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+#result .temp_min_max .temp_min,
+#result .temp_min_max .temp_max {
+    padding: 5px 20px;
+    font-size: large;
+    font-weight: 400;
+    color: var(--white);
+}
+
+#result .temp_min_max .temp_max {
+    border-left: 2px solid var(--white);
+}
+
+#result .temp_min_max .temp_max span,
+#result .temp_min_max .temp_min span {
+    color: #e5e5e5;
+    font-size: 15px;
+    font-weight: 300;
+}

@@ -12,6 +12,10 @@ This is a simple weather app that allows users to check the current weather cond
 - **Location Search:** Users can input a city name to get weather information for that location.
 - **Responsive Design:** The app is designed to work seamlessly on different devices and screen sizes.
 
+## Demo
+
+[Live Demo](https://mustapha-weather-app.netlify.app/)
+
 ## Setup
 
 1. Clone the repository:

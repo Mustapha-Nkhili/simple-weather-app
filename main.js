@@ -10,7 +10,7 @@ function getWeather() {
     let myRequest = new XMLHttpRequest();
     myRequest.open(
       "GET",
-      `http://api.openweathermap.org/data/2.5/weather?q=${cityValue}&appid=${key}&units=metric`
+      `https://api.openweathermap.org/data/2.5/weather?q=${cityValue}&appid=${key}&units=metric`
     );
     myRequest.send();
     myRequest.onload = function () {
